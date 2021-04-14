@@ -1,0 +1,68 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700&display=swap');
+/* end fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(#89DE74,#79FF57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "karla", sans-serif;
+}
+.container h1{
+    color: #219653;
+    font-size: 36px;
+    font-weight: 700;
+}
+.container p{
+    color: #392C2C;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.container p .agrotoxicos{
+    color: #FC4004
+}
+.container p .hortinha{
+    color: #219653
+}
+.container{
+    padding: 0px 22px;
+    font-family: "karla", sans-serif;
+    font-weight: 300;
+}
+.container .button{
+    text-align: center;
+}
+.container a button{
+    font-family: "karla", sans-serif;
+    font-size: 22px;
+    margin-top: 60px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 167px;
+    background-color: #219653;
+}
+.container a button:hover{
+    background-color: #2196548e;
+    transition: background-color 300ms;
+}
+.container a button:active{
+    border: 0;
+    background-color: #2196543d;
+}
+.logo{
+    width: 107px;
+    height: 117px;
+}

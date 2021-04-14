@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	font-family: "karla", sans-serif;
+	font-weight: 400;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(#89de74, #79ff57);
+}
+.hide{
+    display: none;
+}
+.voltarIcon {
+	height: 13px;
+	width: 19px;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 19px;
+}
+header a {
+	font-size: 16px;
+	color: #219653;
+    white-space: nowrap;
+}
+header .logo {
+	margin: 0 95px;
+	height: 32px;
+	width: 32px;
+}
+
+main {
+	display: flex;
+	padding: 28px 56px;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 30px 30px 0 0;
+	background-color: white;
+}
+main h2 {
+	color: #219653;
+	font-size: 20px;
+	align-self: center;
+}
+main .pesquisa {
+	padding-left: 5px;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 90%;
+	margin: 11px auto 49px auto;
+	border: 1px solid transparent;
+	border-bottom-color: #27ae60;
+}
+main .input img {
+	width: 12px;
+	height: 12px;
+}
+.card {
+	width: 248px;
+	height: 398px;
+	background-color: #9efe8f;
+	border-radius: 12px;
+	padding: 19px 23px;
+    transition: background-color 5s;
+}
+.card header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 23px;
+}
+.card .circle {
+	width: 80px;
+	height: 80px;
+	background-color: white;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card header h2 {
+	color: white;
+	font-family: "karla", sans-serif;
+	font-size: 28px;
+}
+.card header img {
+	height: 64px;
+	width: 67px;
+}
+.info .title {
+	font-size: 14px;
+	color: white;
+	white-space: nowrap;
+}
+.info .content {
+	font-size: 12px;
+	color: #392c2c;
+	margin-left: 10px;
+}
