@@ -1,0 +1,3 @@
+# esse arquivo diz que o git não deve subir os arquivos abaixo para o repositório pois eles são muito grandes
+node_modules
+package-lock.json

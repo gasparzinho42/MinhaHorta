@@ -18,13 +18,15 @@
             </a>
             <img class="logo" src="../../assets/farming.svg" alt="logo">
 		</header>
-		<main>
+		<main id="main">
             <h2 id="inputTitle">O que vamos plantar ?</h2>
             <div class="input">
                 <input id="pesquisa" class="pesquisa" placeholder="Ex: orégano" type="text"/>
                 <span><img src="../../assets/loupe.svg" alt="pesquisar" ></span>
             </div>
-			<div class="card hide">
+			<section class="cards">
+				<!-- aqui dentro da section cards vai ser injetado html com o javascript como o exemplo abaixo -->
+				<!-- <div class="card hide">
 				<header>
 					<div class="circle">
 						<img src="../../assets/oregano-removebg-preview.png" alt="orégano"/>
@@ -37,8 +39,9 @@
 					<i class="content">Lorem ipsulum dolor sit.</i>
 				</section>
 
-			</div>
+				<	/div> -->
+			</section>		
         </main>
 	</body>
-	<script src="./pesquisa.js"></script>
+	<script type="module" src="./pesquisa.js"></script>
 </html>
