@@ -12,7 +12,7 @@ const data = [
 		},
 		"epoca": "primavera",
 		"ciclo": {
-			"germinacao": 7,
+			"germinação": 7,
 			"crescimento": 20,
 			"produção": 30,
 			"colheita": 60
@@ -46,7 +46,10 @@ const data = [
 		"img": "https://sj-img.azureedge.net/product/8881-alho-poro-un-m.jpg",
 		"plantio": "Tenha em mãos um vaso de no mínimo 25cm de profundidade, ponha a semente a 1cm da terra com substrato e composto orgânico, mantenha o solo sempre umido, a planta não necessita de podagem.",
 		"sol":"2",
-		"agua": 4,
+		"agua": {
+			"QTDvezes": 1,
+			"aCada": 2
+		},
 		"epoca": "outono",
 		"ciclo": {
 			 "germinação": 7,

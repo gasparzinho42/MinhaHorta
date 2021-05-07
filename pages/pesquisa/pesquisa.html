@@ -19,11 +19,23 @@
             <img class="logo" src="../../assets/farming.svg" alt="logo">
 		</header>
 		<main id="main">
-            <h2 id="inputTitle">O que vamos plantar ?</h2>
-            <div class="input">
-                <input id="pesquisa" class="pesquisa" placeholder="Ex: orégano" type="text"/>
-                <span><img src="../../assets/loupe.svg" alt="pesquisar" ></span>
-            </div>
+			<section class="searchContainer">
+				<h2 id="inputTitle">O que vamos plantar ?</h2>
+				<div class="input">
+					<input id="pesquisa" class="pesquisa" placeholder="Ex: orégano" type="text"/>
+					<span><img src="../../assets/loupe.svg" alt="pesquisar" ></span>
+				</div>
+				<div class="filterContainer">
+					<select class="filter" id="filter">
+						<option selected disabled value="0">(filtrar por...)</option>
+						<option value="1">por tempo de colheita</option>
+						<option value="2">por tempo de germinação</option>
+						<option value="3">por produção</option>
+						<option value="4">por crescimento</option>
+					</select>
+				</div>
+			</section>
+            
 			<section class="cards">
 				<!-- aqui dentro da section cards vai ser injetado html com o javascript como o exemplo abaixo -->
 				<!-- <div class="card hide">

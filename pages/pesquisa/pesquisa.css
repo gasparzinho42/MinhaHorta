@@ -7,17 +7,41 @@
 	font-family: "karla", sans-serif;
 	font-weight: 400;
 }
+:root{
+	--text: #392c2c;
+}
 body {
 	height: 100vh;
 	width: 100vw;
 	background: linear-gradient(#89de74, #79ff57);
 }
-.hide{
-    display: none;
+.hide {
+	display: none;
+}
+.searchContainer{
+	position: relative;
+	top: 0px;
 }
 .voltarIcon {
 	height: 13px;
 	width: 19px;
+}
+.footer{
+	display: flex;
+	flex-direction: row;
+}
+.footer .item{
+	margin-left: 5px;
+	text-align: center;
+}
+.footer .item .footerSpan{
+	color: var(--text);
+	font-size: 10px;
+}
+.title.small{
+	margin-top: 2px;
+	font-size: 11px;
+	color: white
 }
 .header {
 	display: flex;
@@ -25,14 +49,16 @@ body {
 	align-items: center;
 	margin-top: 20px;
 	margin-left: 19px;
+	margin-bottom: 10px;
 }
 header a {
 	font-size: 16px;
 	color: #219653;
-    white-space: nowrap;
+	white-space: nowrap;
 }
 header .logo {
-	margin: 0 95px;
+	position: absolute;
+	left: 50%;
 	height: 32px;
 	width: 32px;
 }
@@ -40,6 +66,10 @@ header .logo {
 main {
 	display: flex;
 	padding: 28px 56px;
+	position: absolute;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	height: max-content;
 	min-height: 100vh;
@@ -62,7 +92,7 @@ main .pesquisa {
 	flex-direction: row;
 	align-items: center;
 	width: 90%;
-	margin: 11px auto 49px auto;
+	margin: 11px auto 5px auto;
 	border: 1px solid transparent;
 	border-bottom-color: #27ae60;
 }
@@ -72,11 +102,17 @@ main .input img {
 }
 .card {
 	width: 248px;
-	height: 398px;
-	background-color: #27AE60;
+	height: max-content;
+	background-color: #27ae60;
 	border-radius: 12px;
 	padding: 19px 13px;
-    transition: background-color 5s;
+	margin-top: 8px;
+	transition: background-color 5s;
+}
+.filterContainer {
+	display: flex;
+	width: 92%;
+	justify-content: flex-start;
 }
 .card header {
 	display: flex;
@@ -109,7 +145,23 @@ main .input img {
 	white-space: nowrap;
 }
 .info .content {
-	font-size: 12px;
-	color: #392c2c;
+	font-size: 11px;
+	color: var(--text);
 	margin-left: 10px;
+}
+
+.filter {
+	border: 1px solid transparent;
+	border-bottom-color: #27ae60;
+	color: var(--text);
+	width: 50%;
+	margin-left: 8px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.filter option {
+	color: #27ae60;
+}
+.filter option:disabled {
+	color: gray;
 }
