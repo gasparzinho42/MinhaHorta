@@ -136,6 +136,7 @@ main .input img {
 	color: white;
 	font-family: "karla", sans-serif;
 	font-size: 28px;
+	text-transform: capitalize;
 }
 .card header img {
 	height: 54px;
@@ -154,13 +155,18 @@ main .input img {
 }
 
 .filter {
-	border: 1px solid transparent;
-	border-bottom-color: #27ae60;
+	border: none;
+	background-color: transparent;
 	color: var(--text);
-	width: 50%;
-	margin-left: 8px;
+	width: 100%;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+.filterbox{
+	border: 1px solid transparent;
+	border-bottom-color: #27ae60 ;
+	width: 55%;
+	margin-left: 10px;
 }
 .filter option {
 	color: #27ae60;

@@ -140,7 +140,7 @@ const data = [
 
 	{
 		"index": 8,
-		"nome": "Orégano",
+		"nome": "orégano",
 		"cientifico": "Origanum vulgare",
 		"img": "https://www.emporiodasfrutasam.com.br/data/produto/m/465-657.jpg",
 		"plantio": "Em um vaso de proporção pequena ponha a semente sobre a terra sem cobrir e regue com um pulverizador sem deixar encharcar, regue apenas em períodos muito seco,  orégano gosta de bastante sol, deixar sem sobra nas horas mais quentes.",
