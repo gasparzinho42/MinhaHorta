@@ -24,7 +24,7 @@ function renderCard() {
 
          <section class="info">
              <h3 class="title">Melhor estação para cultivo:</h3>
-             <p class="content">${planta.epoca}</p>
+             <p class="content epoca">${planta.epoca}</p>
              <h3 class="title">como regar? 💧</h3>
              <p class="content">Você deve regar ${planta.agua.QTDvezes} ${planta.agua.QTDvezes > 1 ? "vezes" : "vez"}  a cada ${planta.agua.aCada} ${planta.agua.aCada > 1 ? "dias" : "dia"}.</p>
              <h3 class="title">Como iluminar? ☀️</h3>

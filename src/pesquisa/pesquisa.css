@@ -28,7 +28,9 @@ body {
 }
 .footer{
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    left: -9px
 }
 .footer .item{
 	margin-left: 5px;
@@ -111,6 +113,9 @@ main .input img {
 	margin-top: 8px;
 	transition: background-color 5s;
 }
+.content.epoca{
+	text-transform: capitalize;
+}
 .filterContainer {
 	display: flex;
 	width: 92%;
@@ -120,7 +125,7 @@ main .input img {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: left;
 	margin-bottom: 23px;
 }
 .card .circle {
@@ -129,6 +134,7 @@ main .input img {
 	background-color: white;
 	border-radius: 100px;
 	display: flex;
+	margin-right: 10px;
 	align-items: center;
 	justify-content: center;
 }
@@ -146,6 +152,7 @@ main .input img {
 	font-size: 14px;
 	color: white;
 	white-space: nowrap;
+	margin-bottom: 4px;
 }
 .info .content {
 	font-size: 11px;

@@ -64,7 +64,7 @@ const data = [
 		"nome": "alface",
 		"cientifico": "lactuca sativa",
 		"img": "https://sj-img.azureedge.net/product/4075-alface-lisa-un-m.jpg",
-		"plantio": "utilize uma bandeja com 10cm de altura, forre a bandeja com cascalhos, prepare o solo com terra e composto orgânico, ponha a  semente a 1cm da terra, regue pulverizando para nao afundar a semente, regue sempre que a terra estiver seca.",
+		"plantio": "Utilize uma bandeja com 10cm de altura, forre a bandeja com cascalhos, prepare o solo com terra e composto orgânico, ponha a  semente a 1cm da terra, regue pulverizando para nao afundar a semente, regue sempre que a terra estiver seca.",
 		"sol":"5",
 		"agua": {
 			"QTDvezes": 1,
@@ -84,7 +84,7 @@ const data = [
 		"nome": "couve",
 		"cientifico": "brassica oleracea",
 		"img": "https://obasuperatacado-img.azureedge.net/product/5785-couve-folha-un-m.jpg",
-		"plantio": "utilize um vaso com no minimo 25cm de diâmetro, semeando a 1cm de profundidade da terra, o solo deve se manter sempre úmido mas sem que fique encharcado, cultive em luz direta provendo sombra nas horas mais quentes.",
+		"plantio": "Utilize um vaso com no minimo 25cm de diâmetro, semeando a 1cm de profundidade da terra, o solo deve se manter sempre úmido mas sem que fique encharcado, cultive em luz direta provendo sombra nas horas mais quentes.",
 		"sol":"6",
 		"agua": {
 			"QTDvezes": 1,
@@ -103,7 +103,7 @@ const data = [
 		"nome": "cebolinha",
 		"cientifico": "Allium schoenoprasum",
 		"img": "https://redecompras-img.azureedge.net/product/15895-cebolinha-und-m.jpg",
-		"plantio": "opte vasos com profundidade e diâmetro mínimo de 15 cm, semeando com 2cm de pronfundidade pois parte do caule fica enterrado, o solo deve ser rico em nutrientes, mantenha uma rega frequente para não secar o solo.",
+		"plantio": "Opte vasos com profundidade e diâmetro mínimo de 15 cm, semeando com 2cm de pronfundidade pois parte do caule fica enterrado, o solo deve ser rico em nutrientes, mantenha uma rega frequente para não secar o solo.",
 		"sol":"6",
 		"agua": {
 			"QTDvezes": 2,
@@ -123,7 +123,7 @@ const data = [
 		"nome": "manjericão",
 		"cientifico": "Ocimum basilicum",
 		"img": "https://obasuperatacado-img.azureedge.net/product/5792-manjericao-un-m.jpg",
-		"plantio": "em um vaso com no mínimo 15cm de diâmetro ponha a semente a 1cm do solo, regando incialmente com pulverizador para evitar o excesso de água, cultive em lugares mais quentes, o manjericão não suporta frio e ventos fortes.",
+		"plantio": "Em um vaso com no mínimo 15cm de diâmetro ponha a semente a 1cm do solo, regando incialmente com pulverizador para evitar o excesso de água, cultive em lugares mais quentes, o manjericão não suporta frio e ventos fortes.",
 		"sol":"6",
 		"agua": {
 			"QTDvezes": 1,
@@ -183,7 +183,7 @@ const data = [
 		"nome": "cebola",
 		"cientifico": "Allium cepa",
 		"img": "https://obasuperatacado-img.azureedge.net/product/5307-hort-cebola-kg-m.jpg",
-		"plantio": "o plantio de cebola necessita de um vaso de médio para grande, em uma terra com textura média para não acumular água, deixe o solo úmido regando a cada 2 dias, a cebola gosta de luminosidade mas não precisa de muita.",
+		"plantio": "O plantio de cebola necessita de um vaso de médio para grande, em uma terra com textura média para não acumular água, deixe o solo úmido regando a cada 2 dias, a cebola gosta de luminosidade mas não precisa de muita.",
 		"sol":"várias",
 		"agua": {
 			"QTDvezes": 1,
