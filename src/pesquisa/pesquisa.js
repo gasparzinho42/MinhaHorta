@@ -1,4 +1,4 @@
-import data from "../../data/data"; //importo o arquivo data.js onde contém o json
+import data from "../../data/data.js"; //importo o arquivo data.js onde contém o json
 console.log(data); // serve para visualmente verificar se data está retornando o json corretamente
 const cardContainer = document.querySelector(".cards"); //cardContainer armazena o elemento com class "cards" que é onde um card fica dentro
 const select = document.getElementById("filter");

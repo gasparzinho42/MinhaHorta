@@ -13,7 +13,7 @@
 body {
 	height: 100vh;
 	width: 100vw;
-	background: linear-gradient(#89de74, #79ff57);
+	background:linear-gradient(to right, #89DE74,#79FF57);
 }
 .hide {
 	display: none;
@@ -66,6 +66,8 @@ header .logo {
 main {
 	display: flex;
 	padding: 28px 56px;
+	left: 50%;
+    transform: translateX(-50%);
 	position: absolute;
 	width: 100%;
 	justify-content: center;
@@ -103,7 +105,7 @@ main .input img {
 .card {
 	width: 248px;
 	height: max-content;
-	background-color: #27ae60;
+	background:linear-gradient(45deg, #27ae60,#65dd47);
 	border-radius: 12px;
 	padding: 19px 13px;
 	margin-top: 8px;
@@ -146,6 +148,7 @@ main .input img {
 }
 .info .content {
 	font-size: 11px;
+	text-align: left;
 	color: var(--text);
 	margin-left: 10px;
 }
