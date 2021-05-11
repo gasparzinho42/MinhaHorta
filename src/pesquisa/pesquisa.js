@@ -79,6 +79,7 @@ function order() {
 	switch (select.value) {
 		case "0":
 			sortedData = data;
+            renderCard()
 			break;
 
 		case "1":
