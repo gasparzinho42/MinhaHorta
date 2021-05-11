@@ -25,7 +25,7 @@ function renderCard() {
          <section class="info">
              <h3 class="title">Melhor estação para cultivo:</h3>
              <p class="content epoca">${planta.epoca}</p>
-             <h3 class="title">como regar? 💧</h3>
+             <h3 class="title">Como regar? 💧</h3>
              <p class="content">Você deve regar ${planta.agua.QTDvezes} ${planta.agua.QTDvezes > 1 ? "vezes" : "vez"}  a cada ${planta.agua.aCada} ${planta.agua.aCada > 1 ? "dias" : "dia"}.</p>
              <h3 class="title">Como iluminar? ☀️</h3>
              <p class="content">A planta precisa de ${planta.sol} horinhas de sol por dia.</p>
@@ -61,43 +61,71 @@ renderCard()
 const input = document.getElementById("pesquisa"); // A variável input armazena o elemento input que contém o ID pesquisa
 input.addEventListener("input", (evt) => {
 	//é adicionado um escutador de eventos do tipo input, que é disparado cada vez que é digitado no campo da variavel input
-	var value = evt.target.value; //armazena o valor atual do input no value
-	filteredAndOrderedList = sortedData.filter((planta) => {
-		return planta.nome.toLowerCase().indexOf(value.toLowerCase()) > -1;
-	});
-	console.log("filteredAndOrederedList:", filteredAndOrderedList);
-    renderCard()
-    order()
+	var {value} = evt.target; //armazena o valor atual do input no value
+    if (value == ""){
+        filteredAndOrderedList = data
+        renderCard()
+        order()
+    }else {
+        filteredAndOrderedList = sortedData.filter((planta) => {
+            return planta.nome.toLowerCase().indexOf(value.toLowerCase()) > -1;
+        });
+        renderCard()
+        order()
+    }
 });
 
-function order () {
-    console.log("select value: ",select.value)
-    if (select.value == "1") {
-        sortedData = data.sort((plantaA, plantaB) => {
-            return plantaA.ciclo.colheita - plantaB.ciclo.colheita;
-        });
-        renderCard()
-    }
-    if (select.value == "2") {
-        sortedData = data.sort((plantaA, plantaB) => {
-            return plantaA.ciclo.germinação - plantaB.ciclo.germinação;
-        });
-        renderCard()
-    }
-    if (select.value == "3") {
-        sortedData = data.sort((plantaA, plantaB) => {
-            return plantaA.ciclo.produção - plantaB.ciclo.produção;
-        });
-        renderCard()
-    }
-    if (select.value == "4") {
-        sortedData = data.sort((plantaA, plantaB) => {
-            return plantaA.ciclo.crescimento - plantaB.ciclo.crescimento;
-        });
-        renderCard()
-    }
-    
-};
+function order() {
+	switch (select.value) {
+		case "0":
+			sortedData = data;
+			break;
+
+		case "1":
+			sortedData = filteredAndOrderedList.sort((plantaA, plantaB) => {
+                return plantaB.ciclo.colheita - plantaA.ciclo.colheita});
+			renderCard();
+			break;
+
+		case "2":
+			sortedData = filteredAndOrderedList.sort((plantaA, plantaB) => {
+                return plantaA.ciclo.colheita - plantaB.ciclo.colheita});    
+			renderCard();
+			break;
+
+		case "3":
+			sortedData = filteredAndOrderedList.sort((plantaA, plantaB) => {
+				return plantaB.ciclo.germinação - plantaA.ciclo.germinação});
+			renderCard();
+			break;
+
+		case "4":
+			sortedData = filteredAndOrderedList.sort((plantaA, plantaB) => {
+				return plantaA.ciclo.germinação - plantaB.ciclo.germinação});
+			renderCard();
+			break;
+		case "5":
+			sortedData = filteredAndOrderedList.sort((plantaA, plantaB) => {
+				return plantaB.ciclo.produção - plantaA.ciclo.produção});
+			renderCard();
+			break;
+		case "6":
+			sortedData = filteredAndOrderedList.sort((plantaA, plantaB) => {
+				return plantaA.ciclo.produção - plantaB.ciclo.produção});
+			renderCard();
+			break;
+		case "7":
+			sortedData = filteredAndOrderedList.sort((plantaA, plantaB) => {
+                return plantaB.ciclo.crescimento - plantaA.ciclo.crescimento});
+			renderCard();
+			break;
+		case "8":
+			sortedData = filteredAndOrderedList.sort((plantaA, plantaB) => {
+                return plantaA.ciclo.crescimento - plantaB.ciclo.crescimento});
+			renderCard();
+			break;
+	}
+}
 select.addEventListener('change',()=>{
     order()
 })
