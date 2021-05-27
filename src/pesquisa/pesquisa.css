@@ -9,11 +9,15 @@
 }
 :root{
 	--text: #392c2c;
+	--green-dark: #35C361;
+	--green-light: #96ED4C;
+	--green-darker: #1C8364;
 }
 body {
 	height: 100vh;
 	width: 100vw;
-	background:linear-gradient(to right, #89DE74,#79FF57);
+	background:linear-gradient(to left, var(--green-dark),var(--green-light));
+	overflow-x: hidden;
 }
 .hide {
 	display: none;
@@ -21,7 +25,9 @@ body {
 .searchContainer{
 	position: relative;
 	top: 0px;
+	height: max-content;
 }
+
 .voltarIcon {
 	height: 13px;
 	width: 19px;
@@ -30,7 +36,8 @@ body {
 	display: flex;
     flex-direction: row;
     position: relative;
-    left: -9px
+    left: -5px;
+	flex-wrap: wrap;
 }
 .footer .item{
 	margin-left: 5px;
@@ -55,7 +62,7 @@ body {
 }
 header a {
 	font-size: 16px;
-	color: #219653;
+	color: var(--green-darker);
 	white-space: nowrap;
 }
 header .logo {
@@ -81,7 +88,7 @@ main {
 	background-color: white;
 }
 main h2 {
-	color: #219653;
+	color: var(--green-darker);
 	font-size: 20px;
 	align-self: center;
 }
@@ -96,18 +103,18 @@ main .pesquisa {
 	flex-direction: row;
 	align-items: center;
 	width: 90%;
-	margin: 11px auto 5px auto;
+	margin: 11px auto 5px 0;
 	border: 1px solid transparent;
-	border-bottom-color: #27ae60;
+	border-bottom-color: var(--green-darker);
 }
 main .input img {
 	width: 12px;
 	height: 12px;
 }
 .card {
-	width: 248px;
+	width: 90vw;
 	height: max-content;
-	background:linear-gradient(45deg, #27ae60,#65dd47);
+	background:linear-gradient(-112deg, var(--green-darker),var(--green-light));
 	border-radius: 12px;
 	padding: 19px 13px;
 	margin-top: 8px;
@@ -129,8 +136,8 @@ main .input img {
 	margin-bottom: 23px;
 }
 .card .circle {
-	width: 80px;
-	height: 80px;
+	width: 75px;
+	height: 75px;
 	background-color: white;
 	border-radius: 100px;
 	display: flex;
@@ -145,8 +152,8 @@ main .input img {
 	text-transform: capitalize;
 }
 .card header img {
-	height: 54px;
-	width: 57px;
+	height: 50px;
+	width: 50px;
 }
 .info .title {
 	font-size: 14px;
@@ -164,20 +171,41 @@ main .input img {
 .filter {
 	border: none;
 	background-color: transparent;
-	color: var(--text);
+	color: gray;
 	width: 100%;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
 .filterbox{
 	border: 1px solid transparent;
-	border-bottom-color: #27ae60 ;
+	border-bottom-color: var(--green-darker);
 	width: 55%;
-	margin-left: 10px;
+	
 }
 .filter option {
-	color: #27ae60;
+	color: var(--green-dark);
 }
-.filter option:disabled {
-	color: gray;
+
+.cards{
+	display: block;
+}
+@media (min-width: 700px) {
+	.cards{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.card{
+		width: 45%;
+		margin-right: 8px;
+	}
+	.searchContainer{
+		width: 60%;
+		text-align: center;
+	}
+	.filterContainer{
+    	width: 40%;
+	}
 }
