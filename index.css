@@ -98,7 +98,7 @@ a button:active{
 	.container{
         display: flex;
         align-items: center;
-        width: 90%;
+        width: 60%;
         flex-direction: row;
     }
  
