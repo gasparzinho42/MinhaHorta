@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	font-family: "karla", sans-serif;
+	font-weight: 400;
+}
+:root{
+	--text: #392c2c;
+	--green-dark: #35C361;
+	--green-light: #96ED4C;
+	--green-darker: #1C8364;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	background:linear-gradient(to left, var(--green-dark),var(--green-light));
+	overflow-x: hidden;
+}
+
+
+.voltarIcon {
+	height: 13px;
+	width: 19px;
+}
+.footer{
+	display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -5px;
+	flex-wrap: wrap;
+}
+.footer .item{
+	margin-left: 5px;
+	text-align: center;
+}
+.footer .item .footerSpan{
+	color: var(--text);
+	font-size: 10px;
+}
+.title.small{
+	margin-top: 2px;
+	font-size: 11px;
+	color: white
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 19px;
+	margin-bottom: 10px;
+}
+header a {
+	font-size: 16px;
+	color: var(--green-darker);
+	white-space: nowrap;
+}
+header .logo {
+	position: absolute;
+	left: 50%;
+	height: 32px;
+	width: 32px;
+}
+label,p{
+	font-size: 14px;
+	color: var(--text);
+}
+main {
+	display: flex;
+	padding: 28px 56px;
+	left: 50%;
+    transform: translateX(-50%);
+	position: absolute;
+	width: 100%;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	height: max-content;
+	min-height: 100vh;
+	border-radius: 30px 30px 0 0;
+	background-color: white;
+}
+
+input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 95%;
+	margin: 11px auto 5px 0;
+	border: 1px solid transparent;
+	border-bottom-color: var(--green-darker);
+}
+.select{
+	border: none;
+	background-color: transparent;
+	color: gray;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+}
+.select{
+	border: 1px solid transparent;
+	border-bottom-color: var(--green-darker) !important;
+	width: 100%;
+}
+.labelGender{
+	margin-bottom: 11px !important;
+}
+
+.cards{
+	display: block;
+}
+
+fieldset {
+	flex-direction: column;
+	display: flex;
+	align-self: center;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid var(--green-darker);
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: "karla", sans-serif;
+	max-width: 80%;
+}
+.inputLabel.email{
+	width: 160%;
+}
+.inputLabel.cep{
+	width: 100% ;
+}
+
+.inputLabel.rua{
+	width: 100% ;
+}
+
+.inputLabel.numero{
+	width: 20% ;
+}
+.inputLabel.complemento{
+	width: 50% ;
+}
+
+.inputLabel.bairro{
+	width: 50% ;
+}
+
+.inputLabel.cidade{
+	width: 50% ;
+}
+
+.inputLabel.UF{
+	width: 50% ;
+}
+
+form {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+	align-self: center;
+}
+
+.field {
+	display: flex;
+	flex-direction: row;
+	
+}
+.inputLabel{
+	display: flex;
+	flex-direction:column;
+	justify-content: stretch;
+}
+
+textarea {
+	border-radius: 5px;
+	border: 1px solid var(--green-darker);
+	padding: 8px;
+}
+
+.titulo {
+	align-self: center;
+	color: #008051;
+	font-size: 24px;
+}
+
+@media (min-width: 700px) {
+	.cards{	
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.card{
+		width: 45%;
+		margin-right: 8px;
+	}
+	.searchContainer{
+		width: 60%;
+		text-align: center;
+	}
+	.filterContainer{
+    	width: 40%;
+	}
+}
+
