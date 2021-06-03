@@ -50,6 +50,12 @@ function renderCard() {
                 <span class="footerSpan">${planta.ciclo.colheita} ${planta.ciclo.colheita > 1 ? "dias" : "dia"}</span>
             </div>
          </footer>
+         <div class="buttonContainer">
+            <a href="#">
+                <button class="alt"> Onde Comprar? </button>
+            </a>
+         </div>
+        
 	 </div>
         `;
 		})

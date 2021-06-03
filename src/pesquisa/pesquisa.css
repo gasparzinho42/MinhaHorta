@@ -68,8 +68,41 @@ header a {
 header .logo {
 	position: absolute;
 	left: 50%;
-	height: 32px;
-	width: 32px;
+	height: 42px;
+	width: 42px;
+}
+.buttonContainer{
+	text-align: center;
+}
+.alt{
+    background-color: white;
+    color: var(--green-darker);
+    border: 1px solid var(--green-darker);
+	align-self: center;
+}
+ a button{
+    font-family: "karla", sans-serif;
+    font-size: 12px;
+    margin-top: 40px;
+    border-radius: 8px;
+    margin-right: 35px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border: none;
+    height: max-content;
+	padding: 13px 24px;
+    width: 80%;
+    background-color: #219653;
+}
+a button:hover{
+    background-color: #2196548e;
+    transition: background-color 300ms;
+}
+a button:active{
+    border: 0;
+    background-color: #2196543d;
 }
 
 main {
@@ -119,6 +152,8 @@ main .input img {
 	padding: 19px 13px;
 	margin-top: 8px;
 	transition: background-color 5s;
+	display: flex;
+	flex-direction: column;
 }
 .content.epoca{
 	text-transform: capitalize;

@@ -68,15 +68,12 @@ label,p{
 	font-size: 14px;
 	color: var(--text);
 }
-main {
+#main {
 	display: flex;
 	padding: 28px 56px;
-	left: 50%;
-    transform: translateX(-50%);
-	position: absolute;
 	width: 100%;
-	justify-content: start;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	height: max-content;
 	min-height: 100vh;
@@ -89,37 +86,32 @@ input {
 	flex-direction: row;
 	align-items: center;
 	width: 95%;
-	margin: 11px auto 5px 0;
+	margin: 11px auto 5px 0px;
 	border: 1px solid transparent;
 	border-bottom-color: var(--green-darker);
 }
 .select{
-	border: none;
+	border: 1px solid transparent;
 	background-color: transparent;
 	color: gray;
-	width: 100%;
+	border-bottom-color: var(--green-darker) !important;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	
+	width: 95%;
+	height: 100%;
 }
-.select{
-	border: 1px solid transparent;
-	border-bottom-color: var(--green-darker) !important;
-	width: 100%;
-}
-.labelGender{
-	margin-bottom: 11px !important;
+.selectContainer{
+	height: 61.2%;
 }
 
-.cards{
-	display: block;
-}
+
+
 
 fieldset {
+	text-align: center;
 	flex-direction: column;
 	display: flex;
-	align-self: center;
-	align-content: center;
+	
 	justify-content: center;
 	padding: 20px;
 	border: 1px solid var(--green-darker);
@@ -128,53 +120,24 @@ fieldset {
 	font-family: "karla", sans-serif;
 	max-width: 80%;
 }
-.inputLabel.email{
-	width: 160%;
-}
-.inputLabel.cep{
-	width: 100% ;
-}
 
-.inputLabel.rua{
-	width: 100% ;
-}
-
-.inputLabel.numero{
-	width: 20% ;
-}
-.inputLabel.complemento{
-	width: 50% ;
-}
-
-.inputLabel.bairro{
-	width: 50% ;
-}
-
-.inputLabel.cidade{
-	width: 50% ;
-}
-
-.inputLabel.UF{
-	width: 50% ;
-}
 
 form {
 	display:flex;
-	flex-direction: column;
 	justify-content: center;
 	width: 90%;
 	align-self: center;
 }
 
 .field {
+	text-align: left;
 	display: flex;
-	flex-direction: row;
-	
+	flex-direction: column;
 }
 .inputLabel{
 	display: flex;
 	flex-direction:column;
-	justify-content: stretch;
+	margin-bottom: 10px;
 }
 
 textarea {
@@ -184,12 +147,47 @@ textarea {
 }
 
 .titulo {
-	align-self: center;
 	color: #008051;
 	font-size: 24px;
 }
+.buttonContainer{
+	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+}
+p{
+	text-align: left;
+}
+ button{
+    font-family: "karla", sans-serif;
+    font-size: 15px;
+    margin-top: 40px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border: none;
+    height: max-content;
+	padding: 13px 24px;
+    width: 80%;
+    background-color: #219653;
+}
+button:hover{
+    background-color: #2196548e;
+    transition: background-color 300ms;
+}
+button:active{
+    border: 0;
+    background-color: #2196543d;
+}
 
 @media (min-width: 700px) {
+	fieldset{
+		width: 70%;
+	}
 	.cards{	
 		display: flex;
 		flex-direction: column;
@@ -208,5 +206,42 @@ textarea {
 	.filterContainer{
     	width: 40%;
 	}
+	.field{
+		display: flex;
+		flex-direction: row;
+	}
+	.inputLabel.email{
+		width: 160%;
+	}
+	.inputLabel.cep{
+		width: 100% ;
+	}
+	
+	.inputLabel.rua{
+		width: 100% ;
+	}
+	
+	.inputLabel.numero{
+		width: 20% ;
+	}
+	.inputLabel.complemento{
+		width: 50% ;
+	}
+	
+	.inputLabel.bairro{
+		width: 50% ;
+	}
+	
+	.inputLabel.cidade{
+		width: 60% ;
+	}
+	
+	.inputLabel.UF{
+		width: 50% ;
+	}
+	.inputLabel.telefone{
+		width: 50% ;
+	}
+
 }
 
