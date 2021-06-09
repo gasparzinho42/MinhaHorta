@@ -1,5 +1,4 @@
 import data from "../../data/data.js"; //importo o arquivo data.js onde contém o json
-console.log(data); // serve para visualmente verificar se data está retornando o json corretamente
 const cardContainer = document.querySelector(".cards"); //cardContainer armazena o elemento com class "cards" que é onde um card fica dentro
 const select = document.getElementById("filter");
 //um card é o elemento/container/quadrado branco onde aparecem os dados da planta
@@ -51,7 +50,7 @@ function renderCard() {
             </div>
          </footer>
          <div class="buttonContainer">
-            <a href="#">
+            <a href="../estabelecimentos/estabelecimentos.html">
                 <button class="alt"> Onde Comprar? </button>
             </a>
          </div>

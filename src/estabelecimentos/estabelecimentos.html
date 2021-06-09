@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="./estabelecimentos.css" />
+		<title>Pesquisa</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="../pesquisa/pesquisa.html">
+				<img
+					class="voltarIcon"
+					src="../../assets/arrowhead-thin-outline-to-the-left (1).svg"
+					alt="seta para esuqerda"
+				/>
+				voltar
+			</a>
+			<img class="logo" src="../../assets/farming.svg" alt="logo" />
+		</header>
+		<main id="main">
+			<section class="searchContainer">
+				<h2 id="inputTitle" style="text-align: center;">De onde você é?</h2>
+                <div class="selects">
+                    <div class="selectContainer">
+                        <label class="label cidade" for="UF">Estados</label>
+                        <select title="Estado" class="select uf" id="UF">
+                            <option selected value="default">selecione...</option>
+                        </select>
+                    </div>
+                    <div class="selectContainer cidade">
+                        <label class="label cidade" for="UF">Cidade</label>
+                        <select title="Cidade" class="select cidade" disabled id="cidade">
+                            <option selected value="default">selecione...</option>
+                        </select>
+                    </div>
+                </div>				
+			</section>
+
+			<section id="cards" class="cards">
+                
+            </section>
+		</main>
+	</body>
+	<script type="module" src="./estabelecimentos.js"></script>
+</html>
