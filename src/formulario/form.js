@@ -11,6 +11,7 @@ fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
         })}
         `
     })
+
 telefone.addEventListener('input',(evt)=>{
     let value = evt.target.value;
     let formatedValue = value.replace(/\D/g,"")
@@ -18,4 +19,30 @@ telefone.addEventListener('input',(evt)=>{
     value = formatedValue
     return event.target.value = value;
 })
+
+
+/*Logica de CEP */ 
+
+$("#cep").focusout(function(){
+    
+    $.ajax({
+       
+        url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+        
+        dataType: 'json',
+       
+        success: function(resposta){
+            
+            $("#logradouro").val(resposta.logradouro);
+            $("#complemento").val(resposta.complemento);
+            $("#bairro").val(resposta.bairro);
+            $("#cidade").val(resposta.localidade);
+            $("#uf").val(resposta.uf);
+            
+            $("#numero").focus();
+        }
+    });
+});
+
+
 

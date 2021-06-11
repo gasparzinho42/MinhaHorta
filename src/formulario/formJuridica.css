@@ -211,12 +211,9 @@ button:active{
 		flex-direction: row;
 	}
 
-	.inputLabel.nomeEmpresa {
-		width: 50%;
-	}
 
 	.inputLabel.email{
-		width: 40%;
+		width: 100%;
 	}
 	.inputLabel.cep{
 		width: 20% ;
@@ -227,7 +224,7 @@ button:active{
 	}
 	
 	.inputLabel.numero{
-		width: 30% ;
+		width: 20% ;
 	}
 	.inputLabel.complemento{
 		width: 50% ;
@@ -247,13 +244,19 @@ button:active{
 	.inputLabel.telefone{
 		width: 50% ;
 	}
-    
+   
+    .inputLabel.inscricaoEstd {
+        width: 50%;
+    }
 
-	.inputLabel.CPF {
-		width: 50%;
-	}
+    .inputLabel.razaoSocial {
+         width: 50%;  
+         
+    }
   
-
+.inputLabel.CNPJ {
+    width: 50%;
+}
 
 }
 

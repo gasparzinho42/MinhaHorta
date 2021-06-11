@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./formJuridica.css" />
+    <title>Pesquisa</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="../../index.html">
+            <img class="voltarIcon" src="../../assets/arrowhead-thin-outline-to-the-left (1).svg"
+                alt="seta para esquerda" />
+            voltar
+        </a>
+        <img class="logo" src="../../assets/farming.svg" alt="logo">
+    </header>
+    <main id="main">
+        <form>
+            <fieldset>
+                <legend class="titulo"> Seja Bem-vindo </legend>
+                <div class="field">
+                    <div class="inputLabel email">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="inputLabel cep">
+                        <label for="">CEP</label>
+                        <input type="text" name="cep" id="cep" placeholder="99.999-999">
+                    </div>
+
+                </div>
+
+                <div class="field">
+                    <div class="inputLabel rua">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua">
+                    </div>
+                    <div class="inputLabel numero">
+                        <label for="">N°</label>
+                        <input type="text" name="numero" id="numero">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="inputLabel complemento">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemento" id="complemento">
+                    </div>
+                    <div class="inputLabel bairro">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="inputLabel cidade">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div class="inputLabel UF">
+                        <label class="labelGender" for="UF">UF</label>
+                        <div class="selectContainer">
+                            <select class="select" type="text" name="UF" id="UF"></select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="inputLabel telefone">
+                        <label for="telefone">Telefone</label>
+                        <input maxlength="15" placeholder="(99) 99999-9999" type="tel" name="telefone" id="telefone">
+                    </div>
+                    <div class="inputLabel CNPJ">
+                        <label for="cpf">CNPJ</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="inputLabel razaoSocial">
+                        <label for="data">Razão Social</label>
+                        <input type="text" name="razao" id="razao">
+                    </div>
+
+                    <div class="inputLabel inscricaoEstd">
+                        <label for="inscricaoEstd">Inscrição Estadual</label>
+                        <input type="text" name="inscricaoEstd" id="inscricaoEstd">
+
+                    </div>
+
+                </div>
+                </div><br>
+                <p>Quais espécies de planta você vende? (não esquece nenhuma, hein)</p><br>
+                <textarea rows="10" cols="40" placeholder="ex: orégano, alecrim, tomate, etc.."></textarea>
+                <div class="buttonContainer">
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+<script src="./form.js"> </script>
+
+</html>
