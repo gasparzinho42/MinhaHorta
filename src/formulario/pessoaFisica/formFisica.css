@@ -7,43 +7,46 @@
 	font-family: "karla", sans-serif;
 	font-weight: 400;
 }
-:root{
+:root {
 	--text: #392c2c;
-	--green-dark: #35C361;
-	--green-light: #96ED4C;
-	--green-darker: #1C8364;
+	--green-dark: #35c361;
+	--green-light: #96ed4c;
+	--green-darker: #1c8364;
 }
 body {
 	height: 100vh;
 	width: 100vw;
-	background:linear-gradient(to left, var(--green-dark),var(--green-light));
+	background: linear-gradient(
+		to left,
+		var(--green-dark),
+		var(--green-light)
+	);
 	overflow-x: hidden;
 }
-
 
 .voltarIcon {
 	height: 13px;
 	width: 19px;
 }
-.footer{
+.footer {
 	display: flex;
-    flex-direction: row;
-    position: relative;
-    left: -5px;
+	flex-direction: row;
+	position: relative;
+	left: -5px;
 	flex-wrap: wrap;
 }
-.footer .item{
+.footer .item {
 	margin-left: 5px;
 	text-align: center;
 }
-.footer .item .footerSpan{
+.footer .item .footerSpan {
 	color: var(--text);
 	font-size: 10px;
 }
-.title.small{
+.title.small {
 	margin-top: 2px;
 	font-size: 11px;
-	color: white
+	color: white;
 }
 .header {
 	display: flex;
@@ -64,7 +67,8 @@ header .logo {
 	height: 32px;
 	width: 32px;
 }
-label,p{
+label,
+p {
 	font-size: 14px;
 	color: var(--text);
 }
@@ -90,7 +94,7 @@ input {
 	border: 1px solid transparent;
 	border-bottom-color: var(--green-darker);
 }
-.select{
+.select {
 	border: 1px solid transparent;
 	background-color: transparent;
 	color: gray;
@@ -100,18 +104,15 @@ input {
 	width: 95%;
 	height: 100%;
 }
-.selectContainer{
+.selectContainer {
 	height: 61.2%;
 }
-
-
-
 
 fieldset {
 	text-align: center;
 	flex-direction: column;
 	display: flex;
-	
+
 	justify-content: center;
 	padding: 20px;
 	border: 1px solid var(--green-darker);
@@ -121,9 +122,8 @@ fieldset {
 	max-width: 80%;
 }
 
-
 form {
-	display:flex;
+	display: flex;
 	justify-content: center;
 	width: 90%;
 	align-self: center;
@@ -134,9 +134,9 @@ form {
 	display: flex;
 	flex-direction: column;
 }
-.inputLabel{
+.inputLabel {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	margin-bottom: 10px;
 }
 
@@ -150,63 +150,64 @@ textarea {
 	color: #008051;
 	font-size: 24px;
 }
-.buttonContainer{
-	
+.buttonContainer {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+}
 
-}
-p{
+.question {
 	text-align: left;
+	font-size: 14px;
+	color: var(--text);
 }
- button{
-    font-family: "karla", sans-serif;
-    font-size: 15px;
-    margin-top: 40px;
-    border-radius: 8px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    border: none;
-    height: max-content;
+button {
+	font-family: "karla", sans-serif;
+	font-size: 15px;
+	margin-top: 40px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	border: none;
+	height: max-content;
 	padding: 13px 24px;
-    width: 80%;
-    background-color: #219653;
+	width: 80%;
+	background-color: #219653;
 }
-button:hover{
-    background-color: #2196548e;
-    transition: background-color 300ms;
+button:hover {
+	background-color: #2196548e;
+	transition: background-color 300ms;
 }
-button:active{
-    border: 0;
-    background-color: #2196543d;
+button:active {
+	border: 0;
+	background-color: #2196543d;
 }
 
 @media (min-width: 700px) {
-	fieldset{
+	fieldset {
 		width: 70%;
 	}
-	.cards{	
+	.cards {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 	}
-	.card{
+	.card {
 		width: 45%;
 		margin-right: 8px;
 	}
-	.searchContainer{
+	.searchContainer {
 		width: 60%;
 		text-align: center;
 	}
-	.filterContainer{
-    	width: 40%;
+	.filterContainer {
+		width: 40%;
 	}
-	.field{
+	.field {
 		display: flex;
 		flex-direction: row;
 	}
@@ -215,45 +216,40 @@ button:active{
 		width: 50%;
 	}
 
-	.inputLabel.email{
+	.inputLabel.email {
 		width: 40%;
 	}
-	.inputLabel.cep{
-		width: 20% ;
+	.inputLabel.cep {
+		width: 20%;
 	}
-	
-	.inputLabel.rua{
-		width: 100% ;
+
+	.inputLabel.rua {
+		width: 100%;
 	}
-	
-	.inputLabel.numero{
-		width: 30% ;
+
+	.inputLabel.numero {
+		width: 30%;
 	}
-	.inputLabel.complemento{
-		width: 50% ;
+	.inputLabel.complemento {
+		width: 50%;
 	}
-	
-	.inputLabel.bairro{
-		width: 50% ;
+
+	.inputLabel.bairro {
+		width: 50%;
 	}
-	
-	.inputLabel.cidade{
-		width: 50% ;
+
+	.inputLabel.cidade {
+		width: 50%;
 	}
-	
-	.inputLabel.UF{
-		width: 50% ;
+
+	.inputLabel.UF {
+		width: 50%;
 	}
-	.inputLabel.telefone{
-		width: 50% ;
+	.inputLabel.telefone {
+		width: 50%;
 	}
-    
 
 	.inputLabel.CPF {
 		width: 50%;
 	}
-  
-
-
 }
-

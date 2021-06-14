@@ -5,18 +5,18 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="./form.css" />
+	<link rel="stylesheet" href="./formFisica.css" />
 	<title>Pesquisa</title>
 </head>
 
 <body>
 	<header class="header">
-		<a href="../../index.html">
-			<img class="voltarIcon" src="../../assets/arrowhead-thin-outline-to-the-left (1).svg"
+		<a href="../../classificacao/classificacao.html">
+			<img class="voltarIcon" src="../../../assets/arrowhead-thin-outline-to-the-left (1).svg"
 				alt="seta para esquerda" />
 			voltar
 		</a>
-		<img class="logo" src="../../assets/farming.svg" alt="logo">
+		<img class="logo" src="../../../assets/farming.svg" alt="logo">
 	</header>
 	<main id="main">	
 		<form>
@@ -33,7 +33,7 @@
 					</div>
 					<div class="inputLabel cep">
 						<label for="">CEP</label>
-						<input type="text" name="cep" id="cep" placeholder="99.999-999">
+						<input type="text" name="cep" maxlength="9" id="cep" placeholder="99.999-999">
 					</div>
 
 				</div>
@@ -80,7 +80,7 @@
 					</div>
 					<div class="inputLabel CPF">
 						<label for="cpf">CPF</label>
-						<input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+						<input type="text" name="cpf" id="cpf" maxlength="14" placeholder="000.000.000-00">
 					</div>
 				</div>
 
@@ -99,7 +99,7 @@
 						</div>
 					</div>
 				</div><br>
-				<p>Quais espécies de planta você vende? (não esquece nenhuma, hein)</p><br>
+				<p class="question">Quais espécies de planta você vende? (não esquece nenhuma, hein)</p><br>
 				<textarea rows="10" cols="40" placeholder="ex: orégano, alecrim, tomate, etc.."></textarea>
 				<div class="buttonContainer">
 					<button type="submit">Enviar</button>
@@ -109,5 +109,6 @@
 		</form>
 	</main>
 </body>
-<script src="./form.js"> </script>
+<script src="../form.js"> </script>
+<script src="./formFisica.js"> </script>
 </html>
