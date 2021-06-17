@@ -21,12 +21,14 @@ body {
 	flex-direction: column;
 	height: 100vh;
 	width: 100vw;
-	overflow: hidden;
+	/* overflow: hidden; */
 	background: linear-gradient(
 		to top right,
 		var(--green-dark),
 		var(--green-light)
 	);
+    background-repeat: no-repeat;
+    background-size: contain;
 	font-family: "karla", sans-serif;
 }
 body::after {
@@ -36,19 +38,18 @@ body::after {
 	background-repeat: no-repeat;
 	background-size: contain;
 	z-index: -1;
-	width: 500px;
-	height: 500px;
+	width: 92%;
+	height: 400px;
 	bottom: 0;
 }
 .container {
-	width: 50%;
+	width: 80%;
 	min-height: 300px;
-	padding: 10px 22px;
+	padding: 10px;
 	font-family: "karla", sans-serif;
 	font-weight: 300;
 	background-color: #b5f1a986;
 	border-radius: 5px;
-	width: min-content;
 }
 .container h1 {
 	color: var(--green-darker);
@@ -59,6 +60,7 @@ body::after {
 	color: var(--text);
 	font-size: 16px;
 	line-height: 1.4;
+    width: 90%;
 }
 .container p .agrotoxicos {
 	font-weight: 700;
@@ -73,6 +75,8 @@ body::after {
 	height: 100%;
 	width: 100%;
 	text-align: center;
+    align-items: center;
+    justify-content: center;
 	display: flex;
 	flex-direction: row;
 }
@@ -87,14 +91,15 @@ a button {
 	font-size: 18px;
 	margin-top: 40px;
 	border-radius: 8px;
-	margin-right: 35px;
+	margin-right: 5px;
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
 	color: white;
 	border: none;
 	height: 82px;
-	width: 137px;
+    padding: 2px;
+	width: max-content;
 	background-color: #219653;
 }
 a button:hover {
@@ -140,7 +145,6 @@ a button:active {
 
 	.button {
 		display: flex;
-		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
@@ -149,4 +153,12 @@ a button:active {
 		width: 99%;
 		height: 99%;
 	}
+}
+@media (max-width: 321px) {
+    .button{
+        flex-direction: column-reverse;
+    }
+    a button{
+        margin: 2px 0px;
+    }
 }
