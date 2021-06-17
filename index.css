@@ -1,127 +1,152 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700&display=swap");
 /* end fonts */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
 }
-:root{
+:root {
 	--text: #392c2c;
-	--green-dark: #35C361;
-	--green-light: #96ED4C;
-	--green-darker: #1C8364;
+	--green-dark: #35c361;
+	--green-light: #96ed4c;
+	--green-darker: #1c8364;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background:linear-gradient(to top right, var(--green-dark),var(--green-light));
-    font-family: "karla", sans-serif;
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background: linear-gradient(
+		to top right,
+		var(--green-dark),
+		var(--green-light)
+	);
+	font-family: "karla", sans-serif;
 }
-.container{
-    width: 50%;
-    padding: 0px 22px;
-    font-family: "karla", sans-serif;
-    font-weight: 300;
+body::after {
+	content: "";
+	position: absolute;
+	background: url("./assets/gardening.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: -1;
+	width: 500px;
+	height: 500px;
+	bottom: 0;
 }
-.container h1{
-    color: var(--green-darker);
-    font-size: 36px;
-    font-weight: 700;
+.container {
+	width: 50%;
+	min-height: 300px;
+	padding: 10px 22px;
+	font-family: "karla", sans-serif;
+	font-weight: 300;
+	background-color: #b5f1a986;
+	border-radius: 5px;
+	width: min-content;
 }
-.container p{
-    color: var(--text);
-    font-size: 16px;
-    line-height: 1.4;
+.container h1 {
+	color: var(--green-darker);
+	font-size: 36px;
+	font-weight: 700;
 }
-.container p .agrotoxicos{
-    font-weight: 700;
-    color: #FC4004
+.container p {
+	color: var(--text);
+	font-size: 16px;
+	line-height: 1.4;
 }
-.container p .hortinha{
-    font-weight: 700;
-    color: var(--green-darker)
+.container p .agrotoxicos {
+	font-weight: 700;
+	color: #fc4004;
+}
+.container p .hortinha {
+	font-weight: 700;
+	color: var(--green-darker);
 }
 
-.button{
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
+.button {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
 }
-.alt{
-    background-color: white;
-    color: var(--green-darker);
-    border: 1px solid var(--green-darker);
+.alt {
+	background-color: white;
+	color: var(--green-darker);
+	border: 1px solid var(--green-darker);
 }
- a button{
-    font-family: "karla", sans-serif;
-    font-size: 18px;
-    margin-top: 40px;
-    border-radius: 8px;
-    margin-right: 35px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    border: none;
-    height: 82px;
-    width: 137px;
-    background-color: #219653;
+
+a button {
+	font-family: "karla", sans-serif;
+	font-size: 18px;
+	margin-top: 40px;
+	border-radius: 8px;
+	margin-right: 35px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	border: none;
+	height: 82px;
+	width: 137px;
+	background-color: #219653;
 }
-a button:hover{
-    background-color: #2196548e;
-    transition: background-color 300ms;
+a button:hover {
+	background-color: #2196548e;
+	transition: background-color 300ms;
 }
-a button:active{
-    border: 0;
-    background-color: #2196543d;
+a button:active {
+	border: 0;
+	background-color: #2196543d;
 }
-.logo{
-    width: 107px;
-    height: 117px;
+.logo {
+	width: 107px;
+	height: 117px;
 }
 @media (min-width: 700px) {
-    body{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-	.container{
-        display: flex;
-        align-items: center;
-        width: 60%;
-        flex-direction: row;
-    }
- 
-    .container p{
-        color: var(--text);
-        font-size: 20px;
-        line-height: 1.4;
-        word-break: keep-all;
-    }
-    .container h1{
-        color: var(--green-darker);
-        font-size: 38px;
-        font-weight: 700;
-    }
-    a button{
-       font-size: 18px;
-    }
+	body {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		width: 60%;
+		flex-direction: row;
+	}
 
-    .logo{
-        height: 100px;
-        width: 100px;
-    }
-    .buttonWrapper{
-        display: block;
-    }
+	.container p {
+		font-size: 20px;
+		line-height: 1.4;
+		word-break: keep-all;
+	}
+	.container h1 {
+		color: var(--green-darker);
+		font-size: 38px;
+		font-weight: 700;
+	}
+	a button {
+		font-size: 18px;
+		margin-top: 0px;
+		margin-bottom: 15px;
+	}
+
+	.button {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	body::after {
+		width: 99%;
+		height: 99%;
+	}
 }

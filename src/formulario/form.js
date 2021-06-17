@@ -1,5 +1,6 @@
 var estados;
 var uf = document.getElementById("UF");
+const form = document.getElementById("form");
 const telefone = document.getElementById("telefone");
 const cep = document.getElementById("cep");
 var rua = document.getElementById("rua");
@@ -25,7 +26,6 @@ telefone.addEventListener("input", (evt) => {
 	value = formatedValue;
 	return (evt.target.value = value);
 });
-
 /*Logica de CEP */
 cep.addEventListener("input", (evt) => {
 	let value = evt.target.value;
@@ -50,3 +50,25 @@ cep.addEventListener("input", (evt) => {
 			});
 	}
 });
+cep.addEventListener("blur", (evt)=>{
+	let value = evt.target.value;
+	console.log(`value.length`, value.length);
+	if (value.length === 9) {
+		fetch(`https://brasilapi.com.br/api/cep/v1/${value}`)
+			.then((response) => response.json())
+			.then((response) => {
+				if (!response.errors) {
+					bairro.value = response.neighborhood;
+					rua.value = response.street;
+					uf.value = response.state;
+					cidade.value = response.city;
+				} else {
+					bairro.value = "";
+					rua.value = "";
+					uf.value = "";
+					cidade.value = "";
+				}
+			});
+	}
+})
+
